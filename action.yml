@@ -10,7 +10,6 @@ inputs:
     default: 'blog.hashnode.dev'
   hashnode-apikey:
     description: 'Your hashnode API Key'
-    required: true
 
 # Define your outputs here.
 outputs:

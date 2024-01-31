@@ -8,7 +8,7 @@ const { request } = require('graphql-request')
 async function run() {
   try {
     const blogname = core.getInput('hashnode-blog', { required: true })
-    const apikey = core.getInput('hashnode-apikey', { required: true })
+    const apikey = core.getInput('hashnode-apikey', { required: false })
 
     const query = `
     query Publication {

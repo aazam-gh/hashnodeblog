@@ -30124,7 +30124,7 @@ const { request } = __nccwpck_require__(5406)
 async function run() {
   try {
     const blogname = core.getInput('hashnode-blog', { required: true })
-    const apikey = core.getInput('hashnode-apikey', { required: true })
+    const apikey = core.getInput('hashnode-apikey', { required: false })
 
     const query = `
     query Publication {
