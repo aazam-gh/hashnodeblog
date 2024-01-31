@@ -1,19 +1,26 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Hashnode PR Blogs'
+description: 'A github action to automatically publish a blog post about the pull request on hashnode when it is merged'
+author: 'aazam-gh'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  hashnode-blog:
+    description: 'Your hashnode blog site name'
     required: true
-    default: '1000'
+    default: 'blog.hashnode.dev'
+  hashnode-apikey:
+    description: 'Your hashnode API Key'
+    required: true
 
 # Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  api-response:
+    description: 'Your API output response'
 
 runs:
   using: node20
   main: dist/index.js
+
+branding:
+  icon: 'message-square'
+  color: 'blue'
